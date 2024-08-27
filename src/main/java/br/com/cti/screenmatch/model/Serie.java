@@ -21,7 +21,6 @@ public class Serie {
     private String atores;
     private String poster;
     private String sinopse;
-    p
 
     public Serie(DadosSerie dadosSerie){
         this.titulo = dadosSerie.titulo();
