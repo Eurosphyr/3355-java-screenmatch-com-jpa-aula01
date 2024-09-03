@@ -21,6 +21,7 @@ public class Serie {
     private String atores;
     private String poster;
     private String sinopse;
+    private String Awards;
 
     public Serie(DadosSerie dadosSerie){
         this.titulo = dadosSerie.titulo();
@@ -30,6 +31,7 @@ public class Serie {
         this.atores = dadosSerie.atores();
         this.poster = dadosSerie.poster();
         this.sinopse = dadosSerie.sinopse().trim();
+        this.Awards = dadosSerie.Awards();
 
     }
 
@@ -97,6 +99,10 @@ public class Serie {
         this.sinopse = sinopse;
     }
 
+    public String getAward(){return Awards;}
+
+    public void setAwards(){this.Awards = Awards;}
+
     @Override
     public String toString() {
         return
@@ -107,7 +113,7 @@ public class Serie {
 
                         ", atores='" + atores + '\'' +
                         ", poster='" + poster + '\'' +
-                        ", sinopse='" + sinopse + '\'';
-
+                        ", sinopse='" + sinopse + '\''+
+                        ", awards'" + Awards + '\'';
     }
 }
